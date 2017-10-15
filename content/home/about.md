@@ -12,31 +12,27 @@ weight = 1
 # List your academic interests.
 [interests]
   interests = [
-    "Artificial Intelligence",
-    "Computational Linguistics",
-    "Information Retrieval"
+    "Quantum Information",
+    "Quantum Probability",
+    "Information Fusion",
+    "Machine Learning",
+    "Decision Making",
   ]
 
 # List your qualifications (such as academic degrees).
-[[education.courses]]
-  course = "PhD in Artificial Intelligence"
-  institution = "Stanford University"
-  year = 2012
 
 [[education.courses]]
-  course = "MEng in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2009
+  course = "Research Internship"
+  institution = "University of Victoria, Canada"
+  year = "2017.6-2017.9"
 
 [[education.courses]]
-  course = "BSc in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2008
- 
+  course = "BEng in Communication Engineering"
+  institution = "Northwestern Polytechnical University, China"
+  year = "2014.9-2018.6"
+
 +++
 
 # Biography
 
-Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+Zhiming Huang is currently an undergraduate student at Northwestern Polytechnical University. His research interests include Quantum Information, Computing Algorithms and Information Fusion. Ever since high school, creating a genuine virtual reality has been his dream. After having some research experiences in different fields, He believes that quantum information will be the way to simulate that world, enabling people to experience another life. Also due to the fact that so fascinating the quantum world is, he wants to devote his whole life to the research of quantum information. And now he is looking for a Ph.D. position in  this field.

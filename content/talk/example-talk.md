@@ -1,11 +1,11 @@
 +++
-date = "2017-01-01T00:00:00"
-title = "Example Talk"
+date = "2017-09-21T10:00:00"
+title = "Clustering Multipath Components in Radio Channel Modeling"
 abstract = ""
 abstract_short = ""
 event = "Hugo Academic Theme Conference"
 event_url = "https://example.org"
-location = "London, United Kingdom"
+location = "University of Victoria, Canada"
 
 selected = false
 math = true
@@ -21,4 +21,4 @@ caption = "My caption :smile:"
 
 +++
 
-Embed your slides or video here using [shortcodes](https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/). Further details can easily be added using *Markdown* and $\rm \LaTeX$ math code. 
+Embed your slides or video here using [shortcodes](https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/). Further details can easily be added using *Markdown* and $\rm \LaTeX$ math code.

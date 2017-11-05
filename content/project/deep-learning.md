@@ -1,9 +1,9 @@
 +++
 # Date this page was created.
-date = "2016-04-27"
+date = "2017-06-21"
 
 # Project title.
-title = "Deep Learning"
+title = "Information Fusion"
 
 # Project summary to display on homepage.
 summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -12,8 +12,8 @@ summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 image_preview = "bubbles.jpg"
 
 # Tags: can be used for filtering projects.
-# Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["deep-learning"]
+# Example: `tags = ["Information-Fusion", "DS-Evidence"]`
+tags = ["information-fusion"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = ""

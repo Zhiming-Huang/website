@@ -4,6 +4,9 @@ copyright = "&copy; 2017 Zhiming Huang"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+preserveTaxonomyNames = true
+paginate = 10
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = "zhiming"
@@ -15,14 +18,31 @@ googleAnalytics = "UA-107416039-1"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
+[outputs]
+  home = [ "HTML", "CSS", "RSS" ]
+  section = [ "HTML", "RSS" ]
+
+
 [blackfriday]
-  hrefTargetBlank = true
+  hrefTargetBlank = true  # `true` opens external links in a new tab.
+  fractions = true  # `false` disables smart fractions (e.g. 5/12 formatted as a fraction).
+  smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
+
 
 [params]
+  # Color theme.
+  #   Choose from `default`, `ocean`, `forest`, or `coffee`.
+  color_theme = "default"
+
+  # Font style.
+  #   Choose from `default`, `classic`, or `playfair`.
+  font = "default"
+
   name = "Zhiming Huang"
   role = "Undergraduate of Communication Engineering"
-  organization = "Northwestern Polytechnical University"
-  organization_url = "http://www.nwpu.edu.cn"
+  # Organizations/Affiliations.
+  #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
+  organizations = [ { name = "Northwestern Polytechnical University", url = "http://en.nwpu.edu.cn/EnglishNew/AboutNPU/overviewnew.htm" } ]
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "huangzhiming@mail.nwpu.edu.cn"
@@ -38,10 +58,45 @@ defaultContentLanguageInSubdir = false
   # Date format (refer to Go's date format: http://flippinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
   date_format = "Mon, Jan 2, 2006"
+  #   Examples: "3:04 pm" or "15:04"
+  time_format = "3:04 PM"
 
+  # Show estimated reading time for posts?
+  reading_time = true
+
+  # Display comment count? Requires commenting to be enabled.
+  comment_count = true
+
+  # Display section pager for posts?
+  section_pager = false
   # Enable global LaTeX math rendering?
   #   If false, you can enable it locally on a per page basis.
   math = true
+
+  # Diplay a logo in navigation bar rather than title (optional).
+  #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
+  logo = ""
+
+  # Enable/disable map in Contact widget.
+  # To show your address on a map in the contact widget, you need to enter your latitude, longitude and choose
+  # a map provider below.
+  # To use Google Maps, set `map = 1` and enter your API key that can be obtained here:
+  #   https://developers.google.com/maps/documentation/javascript/get-api-key
+  # To use OpenStreetMap tiles, set `map = 2`.
+  # To use OpenStreetMap on a high traffic site, set `map = 3` and enter your API key that can be obtained here:
+  #   https://www.mapbox.com/studio/account/tokens
+  # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
+  #
+  # Map provider:
+  #   0: No map
+  #   1: Google Maps
+  #   2: OpenStreetMap (Mapnik)
+  #   3: OpenStreetMap (Mapbox)
+  map = 0
+  map_api_key = ""
+  latitude = "37.4275"
+  longitude = "-122.1697"
+  zoom = 15
 
   # Highlight.js options
   #   highlight
@@ -122,6 +177,28 @@ defaultContentLanguageInSubdir = false
   #   google-scholar, arxiv, orcid, researchgate, mendeley
   #
   #   Full list: https://jpswalsh.github.io/academicons/
+  # Configuration of talk pages.
+  [params.talks]
+    # Show talk time?
+    time = true
+
+  # Configuration of publication pages.
+  [params.publications]
+    # Date format (refer to Go's date format: http://fuckinggodateformat.com )
+    #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+    date_format = "January, 2006"
+
+  # Configuration of project pages.
+  [params.projects]
+    # List publications and talks related to the project?
+    list_children = true
+
+    # Publication list format.
+    #   0 = Simple
+    #   1 = Detailed
+    #   2 = APA
+    #   3 = MLA
+    publication_format = 3
 
   [[params.social]]
     icon = "envelope"
@@ -157,8 +234,8 @@ defaultContentLanguageInSubdir = false
   weight = 1
 
 [[menu.main]]
-  name = "Publications"
-  url = "#publications_selected"
+  name = "Papers"
+  url = "#publications"
   weight = 2
 
 [[menu.main]]
